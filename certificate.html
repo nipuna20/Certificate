@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificate</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f5f5f5;
+            height: 100vh;
+        }
+
+        .certificate-container {
+            width: 80%;
+            background: white;
+            border: 2px solid #000;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .header img {
+            width: 100px;
+        }
+
+        .title {
+            text-align: center;
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #003366;
+        }
+
+        .content {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .content h2 {
+            margin: 10px 0;
+        }
+
+        .seal {
+            position: absolute;
+            bottom: 120px;
+            left: calc(50% - 50px);
+            width: 100px;
+            height: 100px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        .footer {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 50px;
+        }
+
+        .footer div {
+            text-align: center;
+        }
+
+        .qr-code {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .qr-code img {
+            width: 150px;
+            height: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="certificate-container">
+        <div class="header">
+            <img src="logo.png" alt="Medex Logo"> <!-- Replace with your logo URL -->
+            <img src="symbol.png" alt="Symbol"> <!-- Replace with your symbol URL -->
+        </div>
+
+        <div class="title">MEDEX ACADEMY OF PHARMACY</div>
+
+        <div class="content">
+            <p>This is to certify that</p>
+            <h2>Student Name</h2>
+            <p>On successful completion of the prescribed course of study</p>
+            <p>has been awarded the</p>
+            <h2>Course Name</h2>
+        </div>
+
+        <div class="seal"></div>
+
+        <div class="footer">
+            <div>
+                <p>CEO/ Director Academic</p>
+                <hr style="width: 100px;">
+            </div>
+            <div>
+                <p>Director of Academy Affairs</p>
+                <hr style="width: 100px;">
+            </div>
+        </div>
+
+        <div class="qr-code">
+            <p>Scan the QR code to verify:</p>
+            <img src="https://api.qrserver.com/v1/create-qr-code/?data=https://example.com/certificate-download&size=200x200" alt="QR Code"> <!-- Replace with dynamic QR code URL -->
+        </div>
+    </div>
+</body>
+</html>
