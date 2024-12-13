@@ -11,12 +11,12 @@
       rel="stylesheet"
     />
     <style>
-      /* Certificate-specific styles */
+      /* Enhanced Certificate Styles */
       body {
-        font-family: Arial, sans-serif;
+        font-family: 'Georgia', serif;
         margin: 0;
         padding: 0;
-        background: #f5f5f5;
+        background: linear-gradient(135deg, #f3f4f7, #ffffff);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -24,13 +24,13 @@
       }
 
       .certificate-container {
-        width: 80%;
-        max-width: 800px;
-        background: white;
-        border: 5px solid #003366;
-        border-radius: 10px;
-        padding: 20px;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        width: 90%;
+        max-width: 900px;
+        background: #ffffff;
+        border: 8px solid #003366;
+        border-radius: 15px;
+        padding: 40px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
         text-align: center;
         position: relative;
       }
@@ -43,46 +43,61 @@
       }
 
       .certificate-header img {
-        width: 100px;
+        width: 80px;
       }
 
       .certificate-title {
-        font-size: 24px;
+        font-size: 32px;
         font-weight: bold;
         color: #003366;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+      }
+
+      .certificate-subtitle {
+        font-size: 18px;
+        color: #555;
+        margin-bottom: 20px;
       }
 
       .certificate-content {
-        margin: 30px 0;
-        font-size: 18px;
+        margin: 40px 0;
+        font-size: 20px;
         color: #333;
-        line-height: 1.5;
+        line-height: 1.8;
       }
 
       .certificate-content h2 {
         margin: 10px 0;
         color: #003366;
         font-weight: bold;
+        font-size: 28px;
       }
 
       .seal {
         position: absolute;
-        bottom: 70px;
-        left: calc(50% - 50px);
-        width: 100px;
-        height: 100px;
-        background: red;
+        bottom: 40px;
+        left: calc(50% - 60px);
+        width: 120px;
+        height: 120px;
+        background: radial-gradient(circle, red, #8b0000);
         border-radius: 50%;
       }
 
       .certificate-footer {
         display: flex;
         justify-content: space-between;
-        margin-top: 30px;
+        margin-top: 50px;
       }
 
       .footer-signature {
         text-align: center;
+      }
+
+      .footer-signature p {
+        font-size: 16px;
+        font-weight: bold;
+        color: #003366;
       }
 
       .footer-signature hr {
@@ -99,15 +114,17 @@
         <img src="./img/logo.png" alt="Logo" />
         <img src="./img/symbol.png" alt="Symbol" />
       </div>
-      <div class="certificate-title">Certificate of Achievement</div>
+      <div class="certificate-title">Certificate of Excellence</div>
+      <div class="certificate-subtitle">Presented to</div>
       <div class="certificate-content">
         <p>This is to certify that</p>
         <h2>Student Name</h2>
         <p>
-          Has successfully completed the prescribed course of study and is
+          has successfully completed the required course of study and is hereby
           awarded this certificate in
         </p>
         <h2>Course Name</h2>
+        <p>Date of Completion: <strong>01 January 2024</strong></p>
       </div>
       <div class="seal"></div>
       <div class="certificate-footer">
