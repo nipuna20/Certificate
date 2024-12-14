@@ -3,144 +3,83 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certificate - #PORTFOLIO</title>
-    <link rel="shortcut icon" href="./img/mee.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
+    <title>Certificate</title>
     <style>
-      /* Enhanced Certificate Styles */
       body {
-        font-family: 'Georgia', serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(135deg, #f3f4f7, #ffffff);
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
+        font-family: Arial, sans-serif;
+        background: #f3f4f7;
       }
 
-      .certificate-container {
-        width: 90%;
-        max-width: 900px;
-        background: #ffffff;
-        border: 8px solid #003366;
-        border-radius: 15px;
-        padding: 40px;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      header {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background-color: #003366;
+        color: white;
         text-align: center;
-        position: relative;
-      }
-
-      .certificate-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-      }
-
-      .certificate-header img {
-        width: 80px;
-      }
-
-      .certificate-title {
-        font-size: 32px;
-        font-weight: bold;
-        color: #003366;
-        text-transform: uppercase;
-        margin-bottom: 10px;
-      }
-
-      .certificate-subtitle {
-        font-size: 18px;
-        color: #555;
-        margin-bottom: 20px;
-      }
-
-      .certificate-content {
-        margin: 40px 0;
+        padding: 10px 0;
         font-size: 20px;
-        color: #333;
-        line-height: 1.8;
-      }
-
-      .certificate-content h2 {
-        margin: 10px 0;
-        color: #003366;
         font-weight: bold;
-        font-size: 28px;
+        z-index: 10;
       }
 
-      .seal {
-        position: absolute;
-        bottom: 8px;
-        left: calc(50% - 60px);
-        width: 120px;
-        height: 120px;
-        background: radial-gradient(circle, red, #8b0000);
-        border-radius: 50%;
-      }
-
-      
-      .certificate-footer {
-        display: flex;
-        justify-content: space-between;
-        margin-top: 50px;
-      }
-
-      .footer-signature {
+      footer {
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        background-color: #003366;
+        color: white;
         text-align: center;
+        padding: 10px 0;
+        font-size: 14px;
+        z-index: 10;
       }
 
-      .footer-signature p {
+      .content {
+        margin-top: 60px; /* Space for the fixed header */
+        margin-bottom: 80px; /* Space for the fixed footer */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        min-height: calc(100vh - 140px); /* Account for header and footer height */
+      }
+
+      .certificate-image {
+        max-width: 27%;
+        height: auto;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        margin-bottom: 20px;
+      }
+
+      .download-button {
+        padding: 10px 20px;
+        background-color: #003366;
+        color: white;
+        text-decoration: none;
         font-size: 16px;
-        font-weight: bold;
-        color: #003366;
+        border-radius: 5px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        transition: background-color 0.3s ease;
       }
 
-      .footer-signature hr {
-        margin: 10px auto;
-        width: 150px;
-        border: 1px solid #003366;
+      .download-button:hover {
+        background-color: #00509e;
       }
     </style>
   </head>
-
   <body>
-    <div class="certificate-container">
-      <div class="certificate-header">
-        <img src="./img/logo.png" alt="Logo" />
-        <img src="./img/symbol.png" alt="Symbol" />
-      </div>
-      <div class="certificate-title">Certificate of Excellence</div>
-      <div class="certificate-subtitle">Presented to</div>
-      <div class="certificate-content">
-        <p>This is to certify that</p>
-        <h2>Student Name</h2>
-        <p>
-          has successfully completed the required course of study and is hereby
-          awarded this certificate in
-        </p>
-        <h2>Course Name</h2>
-        <p>Date of Completion: <strong>01 January 2024</strong></p>
-      </div>
-      <div class="seal"></div>
-      <div class="certificate-footer">
-        <div class="footer-signature">
-          <p>CEO/Director Academic</p>
-          <hr />
-        </div>
-        <div class="footer-signature">
-          <p>Director of Academy Affairs</p>
-          <hr />
-        </div>
-      </div>
+    <header>
+      MEDEX Institute
+    </header>
+    <div class="content">
+      <img src="./img/certificate.png" alt="Certificate" class="certificate-image" />
+      <a href="./img/certificate.png" download class="download-button">Download Certificate</a>
     </div>
-
-    <script src="mixitup.min.js"></script>
-    <script src="script.js"></script>
+    <footer>
+      &copy; 2024 MEDEX Institute. All Rights Reserved.
+    </footer>
   </body>
 </html>
